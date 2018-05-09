@@ -1,0 +1,6 @@
+{% load cms_tags %}
+
+<p>{{ instance.position }} - {{ instance.path }}</p>
+{% for plugin in instance.child_plugin_instances %}
+    {% render_plugin plugin %}
+{% endfor %}
